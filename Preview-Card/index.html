@@ -41,6 +41,10 @@
       padding: 35px;
     }
 
+    .image2 {
+      display: none;
+    }
+
     .perf {
       letter-spacing: 5px;   
       font-family: "Montserrat", serif;
@@ -104,11 +108,68 @@
       width: 20px;
       
     }
+
+    
+
+    @media only screen and (max-width: 850px) {
+
+      .perf {
+          font-size: 14px;
+          margin-bottom: 13px;
+      }
+
+      body {
+        margin-top: 50px;
+      }
+      .main {
+        flex-direction: column;
+        height: fit-content;
+        border-radius: 15px;
+          
+      }
+
+      .dprice {
+        font-size: 33px;
+        margin-bottom: 10px;
+      }
+
+      h1 {
+        font-size: 38px;
+        line-height: 45px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+      }
+
+      .mainb {
+        font-size: 16px;
+        line-height: 28px;
+      }
+
+      .image1 {
+        display: none;
+      }
+
+      .image2 {
+        display: block;
+      }
+
+      .button {
+        margin-top: 10px;
+        height: 55px;
+        width: 345px;
+      }
+
+      .aprice {
+        bottom: 9px;
+      }
+
+    }
   </style>
 </head>
 <body>
   <div class="main">
-    <img src="images/image-product-desktop.jpg" width="425px">
+    <img src="images/image-product-desktop.jpg" width="425px" class="image1">
+    <img src="images/image-product-mobile.jpg" width="420px" class="image2">
     
     <div class="box">
       <span class = "perf">PERFUME</span> 
